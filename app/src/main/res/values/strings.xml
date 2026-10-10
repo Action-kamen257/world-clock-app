@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">World Clock</string>
+    <string name="widget_description">Shows current time for major cities worldwide</string>
+</resources>

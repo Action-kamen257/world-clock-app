@@ -1,0 +1,81 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer Clock Face Ring -->
+    <path
+        android:pathData="M54,30 A24,24 0 1,1 53.9,30"
+        android:strokeWidth="2.5"
+        android:strokeColor="#E6EDF3"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round" />
+
+    <!-- Globe Grid: Equator -->
+    <path
+        android:pathData="M30,54 L78,54"
+        android:strokeWidth="1.2"
+        android:strokeColor="#4458A6FF"
+        android:fillColor="#00000000" />
+
+    <!-- Globe Grid: Prime Meridian -->
+    <path
+        android:pathData="M54,30 L54,78"
+        android:strokeWidth="1.2"
+        android:strokeColor="#4458A6FF"
+        android:fillColor="#00000000" />
+
+    <!-- Globe Grid: Curved Meridians (Left & Right) -->
+    <!-- Curved meridian left: start (54,30), curve left passing through (42,54), end (54,78) -->
+    <path
+        android:pathData="M54,30 Q39,54 54,78"
+        android:strokeWidth="1.0"
+        android:strokeColor="#2F58A6FF"
+        android:fillColor="#00000000" />
+    <path
+        android:pathData="M54,30 Q69,54 54,78"
+        android:strokeWidth="1.0"
+        android:strokeColor="#2F58A6FF"
+        android:fillColor="#00000000" />
+
+    <!-- Globe Grid: Latitudes (Top & Bottom) -->
+    <path
+        android:pathData="M37.5,42 Q54,48 70.5,42"
+        android:strokeWidth="1.0"
+        android:strokeColor="#2F58A6FF"
+        android:fillColor="#00000000" />
+    <path
+        android:pathData="M37.5,66 Q54,60 70.5,66"
+        android:strokeWidth="1.0"
+        android:strokeColor="#2F58A6FF"
+        android:fillColor="#00000000" />
+
+    <!-- Clock Hour Hand -->
+    <!-- Hour hand points up-left: from (54,54) to (44,44) -->
+    <path
+        android:pathData="M54,54 L44,44"
+        android:strokeWidth="2.5"
+        android:strokeColor="#E6EDF3"
+        android:strokeLineCap="round" />
+
+    <!-- Clock Minute Hand -->
+    <!-- Minute hand points up-right: from (54,54) to (68,46) -->
+    <path
+        android:pathData="M54,54 L68,46"
+        android:strokeWidth="2.0"
+        android:strokeColor="#E6EDF3"
+        android:strokeLineCap="round" />
+
+    <!-- Second Hand -->
+    <path
+        android:pathData="M54,54 L54,34"
+        android:strokeWidth="1.0"
+        android:strokeColor="#F0B429"
+        android:strokeLineCap="round" />
+
+    <!-- Center Pivot Dot -->
+    <path
+        android:pathData="M54,52.5 A1.5,1.5 0 1,1 53.9,52.5"
+        android:fillColor="#F0B429" />
+</vector>
